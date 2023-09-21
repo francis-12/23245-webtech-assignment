@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In</title>
+    <script defer src="./js/login.js"></script>
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <div id="cont">
+      <div id="top">SIGN IN</div>
+      <span
+        style="
+          font-family: 'Poppins', sans-serif;
+          text-align: center;
+          font-size: 12px;
+          padding-left: 30%;
+        "
+        >PLEASE ENTER YOUR CREDENTIALS</span
+      >
+      <br />
+      <br />
+      <br />
+      <form
+        id="form"
+        action="login"
+        method="POST"
+        name="myform"
+        onsubmit="return (validate());"
+      >
+        <div id="stud">
+          <label for="email"></label>
+          <input
+            id="email"
+            type="text"
+            name="email"
+            size="30"
+            placeholder="E-mail Address"
+            class="mainLoginInput"
+            required=""
+          />
+        </div>
+        <br />
+        <div id="passw">
+          <label for="password"></label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            size="30"
+            placeholder="Password"
+            class="mainLoginInput"
+            required=""
+          />
+        </div>
+        <br />
+        <br />
+        <div>
+          <center>
+            <button id="loginBtn" type="submit">
+              <span style="font-weight: bold; color: white">LOGIN</span>
+            </button>
+            <br />
+            <br />
+            <br />
+            <table>
+              <tr>
+                <td><a href="signup.html" style="color: black">Sign Up</a></td>
+              </tr>
+            </table>
+          </center>
+        </div>
+
+        <br />
+        <br />
+        <br />
+      </form>
+    </div>
+  </body>
+</html>
